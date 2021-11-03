@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, Verdana,  sans-serif; /* Семейство шрифтов */
+    font-size: 11pt; /* Размер основного шрифта в пунктах  */
+    background-color: #303020 url(back.jpg); /* Цвет фона веб-страницы */\
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    background-size: cover;
+    color: #333; /* Цвет основного текста */
+    margin-left: 30px;
+}
+h1 {
+    color: #B02020; /* Цвет заголовка */
+    font-size: 28pt; /* Размер шрифта в пунктах */
+    font-family: Georgia, Times, serif; /* Семейство шрифтов */
+    font-weight: normal; /* Нормальное начертание текста  */
+    -webkit-text-stroke: .02em gold;
+}
+
+h2 {
+    color: #FF2020; /* Цвет заголовка */
+    font-size: 20pt; /* Размер шрифта в пунктах */
+    font-family: Georgia, Times, serif; /* Семейство шрифтов */
+    font-weight: normal; /* Нормальное начертание текста  */
+    -webkit-text-stroke: .015em gold;
+}
+table.pred {
+    color: #208020; /* Цвет заголовка */
+    font-size: 18pt; /* Размер шрифта в пунктах */
+    font-family: Georgia, Times, serif; /* Семейство шрифтов */
+    font-weight: normal; /* Нормальное начертание текста  */
+    margin-left: 30px;
+}
+table {
+    background-color: rgba(240,240, 240, 0.85);
+    font-family: Arial, Verdana,  sans-serif; /* Семейство шрифтов */
+    font-size: 11pt; /* Размер основного шрифта в пунктах  */
+    margin-left: 30px;
+}
+input.new {
+    background: -moz-linear-gradient(#006699, #EBFFFF);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#006699), to(#EBFFFF));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00BBD6', endColorstr='#006699');
+    padding: 3px 7px;
+    color: #333;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #666;
+    height:50px;
+    width:200px;
+    font-size: 16pt;
+    -webkit-text-stroke: .003em white;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Small talk intent detection demo</title>
+    <!--link rel="stylesheet" href="static/style.css" /-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+
+</head>
+<body background="static/back.jpg" style="background-size: cover">
+<h1 align="center">Small talk intent detection demo</h1>
+<form method="POST">
+    <dl>
+        <dt><h2>Enter sentence here: </h2><br>
+        <dd><textarea name=text rows=4 cols=80 style="font-size: 18pt">{{ text }}</textarea>
+        <dd><input  type=submit name="submit_button" value="Predict intent" class="new">
+        <dd><input  type=submit name="submit_button" value="Random sentence" class="new">
+
+    </dl>
+</form>
+
+
+<br>
+<h2>Predicted intent: </h2><br>
+<table border="1" cellpadding="10" class="pred">
+    <tr><td>{{ prediction_message[0] }}</tr></td>
+</table> <BR>
+<table border="1" cellpadding="10" class="pred">
+    <tr><td>{{ prediction_message[1] }}</tr></td>
+</table> <BR>
+<table border="1" cellpadding="10" class="pred">
+    <tr><td>{{ prediction_message[2] }}</tr></td>
+</table> <BR>
+<h2>Suggested tests: </h2>
+<BR>
+    <table border="1" width="60%" cellpadding="10">
+        <tr><td>
+    - ты в хорошем настроении сегодня <BR>
+        </td></tr>
+        <tr><td>
+    - просто хотел сказать прости <BR>
+        </td></tr>
+        <tr><td>
+    - Это правда. <BR>
+        </td></tr>
+        <tr><td>
+    - испортила мне настроение <BR>
+        </td></tr>
+        <tr><td>
+    - проживаешь по какому адресу? <BR>
+        </td></tr>
+    </table>
+<BR><BR><BR>
+    <table border="1" cellpadding="10" class="pred">
+    <tr><td>MADE by Andrei Klestov</tr></td>
+    </table> <BR>
+</body>
+</html>
