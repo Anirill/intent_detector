@@ -74,5 +74,6 @@ class Intent(nn.Module):
         log_intent_logits = F.log_softmax(intent_logits, dim=-1)
         top_n = torch.argsort(log_intent_logits, dim=-1, descending=True)[:size]
         top_n = np.array(top_n)
+
         #         float(log_intent_logits_test[i])
-        return top_n, np.array([log_intent_logits[i].item() for i in top_n])
+        return top_n, np.array([np.exp(log_intent_logits[i].item()) for i in top_n])
